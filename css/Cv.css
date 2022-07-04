@@ -1,0 +1,218 @@
+header{
+    margin: 0;
+    padding: 0;
+    opacity: 1
+}
+
+.material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+body {
+    margin: 0px;
+    width: max-content;
+    height:max-content ;
+    padding: 0px;
+    background: #e7e7e7;
+    font-family: 'Lato', sans-serif;
+}
+
+.lightTheme{
+    background-color: #e7e7e7;
+    color: #000;
+}
+
+.lightTheme-box{
+    color: #000000;
+    box-shadow: 0px 4px 8px #000;
+}
+
+#themeIcon{
+    position: sticky;
+    top: 100px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #EAEAEA;
+    /*box-shadow: 0px 4px 8px #e7e7e7ad*/;
+}
+
+.dark-mode-box {    
+    background-color: #e7e7e705;
+    color: #EAEAEA;
+    
+    box-shadow: 0px 4px 8px #e7e7e7a5;
+   
+}
+
+#AboutMe{
+    display: block;
+    width: 35em ;
+    height: 40em;
+    padding-left: 30px/*284px*/;
+    padding-top: /*284px*/20px;
+    position:relative;
+    left: 130px;
+    top: 100px;
+    border: 0px solid gray;
+    margin: 0px;
+    box-sizing:content-box;
+    
+/*    box-shadow: 0px 4px 8px  #000000ba ;*/
+}
+
+
+#hboxMenu {
+    display: inline;
+    /*opacity: 1;*/
+    z-index: 2;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    display: flexbox;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333fa;
+    /*backdrop-filter: blur(12px);*/
+    
+    
+}
+
+* {box-sizing:border-box}
+
+
+#hboxMenu li{
+    display: inline;   
+    
+}
+
+#hboxMenu li p{
+    float: left;
+    z-index: 2; 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#hboxMenu li #themeIcon{
+    z-index: 2;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    float:right;
+    font-size: 32px; color: #e7e7e7;
+    background-color: transparent;
+    border-color: transparent;   
+    
+}
+
+#nom{
+    width: 12.4em ;
+    height: 1em;
+    font-size: 54px;
+    margin-left:-9px;
+    margin-top: 18px;
+    align-content: center;
+}
+
+#title{
+    font-size: 28px;
+    width: 14em ;
+    height: 2em;
+    /*background-color: #2b2d42;*/
+    margin-left:-10px;
+   align-content: center;
+   
+}
+
+#AboutmeText{
+    width: 26em ;
+    height: 12em;
+    margin: 0;
+    text-align:justify;
+    font-size: 18px;   
+}
+
+#skillSection{
+    display: block;
+    top: 400px;
+    left: 130px;
+    position:relative;    
+}
+
+/* Skill bar css section */
+.container {
+    width: 100%; 
+    border-radius: 15px;
+    background-color: #ddd; 
+}
+
+.skills {
+    text-align: center; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    color: black;
+  }
+  /* sepcific css for skill */
+  .html {width: 90%; background-color: #04AA6D;   border-radius: 15px;}
+  .css {width: 90%; background-color: #04AA6D;   border-radius: 15px;}
+  .javascript {width: 90%; background-color: #04AA6D;   border-radius: 15px;}
+  .csharp {width: 90%; background-color: #04AA6D;   border-radius: 15px;}
+
+
+
+  /* responsive section */
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: yellow;
+    }
+  }
+  /* Dark mode */
+@media ( prefers-color-scheme: dark) {
+    body {
+        color-scheme:dark;
+        background-color: #121212;
+        color: #EAEAEA;
+    }
+    .dark-mode {
+        
+        background-color: #121212;
+        color: #EAEAEA;
+        /*box-shadow: 0px 4px 8px #e7e7e7ad*/;
+    }
+    
+    .dark-mode-box {    
+        background-color: #e7e7e705;
+        color: #EAEAEA;
+        
+        box-shadow: 0px 4px 8px #e7e7e7a5;
+       
+    }
+    
+    
+}
+/* Dark mode */
+@media (prefers-color-scheme: light) {
+    body {
+        color-scheme: light;
+        background-color: #e7e7e7;
+        color: black;
+    }
+    .lightTheme{
+        background-color: #e7e7e7;
+        color: #000;
+    }
+    
+    .lightTheme-box{
+        color: #000000;
+        box-shadow: 0px 4px 8px #000;
+    }
+}
