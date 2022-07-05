@@ -1,4 +1,4 @@
-debugger
+//debugger
 window.open = Initialiser();
 window.onload = Initialiser();
 
@@ -33,7 +33,7 @@ function DarkModeToggle() {
     let element = document.body;
     let themeIcon = document.getElementById("themeIcon");
     let aboutMeBox = document.getElementById("AboutMe");
-    debugger
+    //debugger
 
     if (element.classList.contains("dark-mode")) {
         element.classList.toggle("dark-mode");
