@@ -2,73 +2,80 @@
 <html lang="fr" <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/Cv.css">
+<link rel="stylesheet" href="css/main.css">
 <script src="scripts/cv.js"></script>
+<script defer src="assets/fontawesome/js/all.js"></script>
+<script src="https://kit.fontawesome.com/aa99fe7e94.js" crossorigin="anonymous"></script>
 <title>Cv Thomas Toulouse</title>
 </head>
 <header>
-    <nav>
-        <ul class="overlay" id="hboxMenu">
-            <li>
-                <p>
-                    About Me
-                </p>
-            </li>
-            <li>
-                <p>
-                    Skill
-                </p>
 
-            </li>
-            <li>
-                <p>
-                    Contact me
-                </p>
-            </li>
-            <li>
-                <button id="themeIcon" class="material-symbols-outlined" onclick="DarkModeToggle()">
-                light_mode
-                </button>
-            </li>
-        </ul>
+    <nav class="overlay " id="hboxMenu">
+        <li>
+            <p>
+                About Me
+            </p>
+        </li>
+        <li>
+            <p>
+                Skill
+            </p>
+
+        </li>
+        <li>
+
+            <p>
+                Contact me
+            </p>
+        </li>
+        <li>
+            <button id="themeIcon" class="fa-solid falg fa-circle-half-stroke" onclick="DarkModeToggle(),false">
+                
+            </button>
+        </li>
     </nav>
+
 </header>
 
-<body class="lightTheme dark-mode">
+<body class="">
     <br>
     <br>
 
 
+    <section class="grid-layout-one">
+        <div id="AboutMe" class="">
+            <h1 id="title">Bonjour je m'appelle </h1>
+            <h2 id="nom">Thomas Toulouse.</h2>
+            <p id="AboutmeText">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cum, error expedita id itaque maiores! Illo neque, cum reiciendis maxime consectetur voluptatum quidem voluptates eaque magnam sint nostrum. Ipsam, corrupti.
+            </p>
+        </div>
+    </section>
 
-    <div id="AboutMe" class="lightTheme-box dark-mode-box">
-        <h1 id="title">Bonjour je m'appelle </h1>
-        <h2 id="nom">Thomas Toulouse.</h2>
-        <p id="AboutmeText">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cum, error expedita id itaque maiores! Illo neque, cum reiciendis maxime consectetur voluptatum quidem voluptates eaque magnam sint nostrum. Ipsam, corrupti.
-        </p>
-    </div>
-
-    <div id="skillSection">
-        <h1 id="title">Skill</h1>
-        <p>HTML</p>
-        <div class="container">
-            <div class="skills html">90%</div>
+    <section class="grid-one">
+        <div id="skillSection">
+            <h1 id="title">Skill</h1>
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">90%</div>
+            </div>
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">90%</div>
+            </div>
+            <p>JavaScript</p>
+            <div class="container">
+                <div class="skills javascript">90%</div>
+            </div>
+            <p>C#</p>
+            <div class="container">
+                <div class="skills csharp">90%</div>
+            </div>
+            <br>
         </div>
-        <p>CSS</p>
-        <div class="container">
-            <div class="skills css">90%</div>
-        </div>
-        <p>JavaScript</p>
-        <div class="container">
-            <div class="skills javascript">90%</div>
-        </div>
-        <p>C#</p>
-        <div class="container">
-            <div class="skills csharp">90%</div>
-        </div>
-        <br>
-    </div>
+    </section>
 </body>
 
 
