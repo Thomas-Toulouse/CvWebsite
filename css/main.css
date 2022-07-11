@@ -1,7 +1,8 @@
 header {
     margin: 0;
     padding: 0;
-    opacity: 1
+    opacity: 1;
+    width : 100%;
 }
 
 .material-symbols-outlined {
