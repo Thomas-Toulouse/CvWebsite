@@ -115,20 +115,19 @@ body {
 
 #nom {
     font-size: 1.5rem;
-    margin-left: 2%;
-    margin-right: 2%;
+    /*margin-left: 4%;*/
     color: #a4d8fc;
 }
 
 .container-about #title {
     font-size: 2rem;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .container-about #AboutmeText {
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 1rem;
@@ -245,8 +244,7 @@ body {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 4px;
         margin-top: 2%;
     }
 }
