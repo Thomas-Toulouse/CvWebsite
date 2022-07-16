@@ -9,9 +9,8 @@ header {
 }
 
 body {
+    font-size: 16px;
     margin: 0px;
-    width: max-content;
-    height: max-content;
     padding: 0px;
     background: #e7e7e7;
     font-family: 'Lato', sans-serif;
@@ -45,35 +44,32 @@ body {
     box-shadow: 0px 4px 8px #e7e7e7a5;
 }
 
-.grid-layout-one {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-self: start;
-}
-
 
 /* use the variables */
 
-.grid-one {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-#AboutMe {
+.container-about {
     /* padding: 40px;
     margin-top: 10rem;
     margin-left: 4rem;*/
-    display: grid;
-    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+    width: 85%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    padding: auto;
+    justify-content: space-between;
+    align-self: center;
+    box-sizing: content-box;
+    /* padding-left: 2rem;*/
     /*row-gap: 25px;*/
-    grid-template-rows: auto auto auto;
-    gap: 10px;
     /*grid-template-columns: 2fr;*/
 }
 
 #hboxMenu {
+    justify-content: space-around;
     display: flex;
     justify-items: flex-end;
     /*opacity: 1;*/
@@ -83,9 +79,9 @@ body {
     top: 0;
     width: 100%;
     list-style-type: none;
-    margin: 0;
+    margin-bottom: 30%;
     padding: 0;
-    background-color: #333333fa;
+    background-color: #333333;
     /*backdrop-filter: blur(12px);*/
 }
 
@@ -121,26 +117,27 @@ body {
 }
 
 #nom {
-    width: 12.4em;
-    height: 1em;
-    margin-left: -9px;
-    margin-top: 18px;
-    align-content: center;
+    font-size: 1.5rem;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #a4d8fc;
 }
 
-#title {
-    width: 14em;
-    height: 2em;
-    /*background-color: #2b2d42;*/
-    margin-left: -10px;
-    align-content: center;
+.container-about #title {
+    font-size: 2rem;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-#AboutmeText {
-    width: 26em;
-    height: 12em;
-    margin: 0;
+.container-about #AboutmeText {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1rem;
     text-align: justify;
+    width: fit-content;
+    text-overflow: clip;
 }
 
 
@@ -171,8 +168,7 @@ body {
 
 /* sepcific css for skill */
 
-
-/*.html {
+.html {
     width: 90%;
     background-color: #04AA6D;
     border-radius: 15px;
@@ -194,7 +190,7 @@ body {
     width: 90%;
     background-color: #04AA6D;
     border-radius: 15px;
-} */
+}
 
 
 /* Dark mode */
@@ -206,15 +202,18 @@ body {
         color: #EAEAEA;
     }
     .dark-mode {
+        color-scheme: dark;
         background-color: #121212;
         color: #EAEAEA;
         /*box-shadow: 0px 4px 8px #e7e7e7ad*/
         ;
     }
     .dark-mode-box {
+        color-scheme: dark;
         background-color: #e7e7e705;
         color: #EAEAEA;
         box-shadow: 0px 4px 8px #e7e7e7a5;
+        border-spacing: 50%;
     }
 }
 
@@ -228,10 +227,12 @@ body {
         color: black;
     }
     .light-mode {
+        color-scheme: light;
         background-color: #e7e7e7;
         color: #000;
     }
     .lightTheme-box {
+        color-scheme: light;
         background-color: #EAEAEA;
         color: #000000;
         box-shadow: 0px 4px 8px #000;
@@ -239,23 +240,17 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
     #AboutMe {
-        display: grid;
-        grid-row: auto;
-        margin-left: 0.2fr;
-        margin-right: 0.2fr;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4 fr 0.4fr;
+        display: flex;
+        width: 96%;
         flex-direction: column;
         flex-wrap: wrap;
-        grid-template-areas: "title" "nom" "AboutmeText";
-    }
-    .grid-layout-one {
-        margin-left: 20px;
-        margin-right: 20px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-self: start;
+        align-content: center;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
     }
 }

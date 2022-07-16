@@ -13,8 +13,8 @@ function Initialiser() {
     let element = document.body;
     let themeIcon = document.getElementById("themeIcon");
     let aboutMeBox = document.getElementById("AboutMe");
-    var initialMode = "light";
-    var prefersColorSchemeDark = window.matchMedia("(prefers-color-scheme: dark)");
+    var initialMode = "dark";
+    var prefersColorSchemeDark = window.matchMedia("prefers-color-scheme: dark");
 
     if (prefersColorSchemeDark.matches) {
         initialMode = "dark";
@@ -22,7 +22,6 @@ function Initialiser() {
         aboutMeBox.classList.add("dark-mode-box");
 */
     }
-
 
     if (localStorage.getItem("initialMode") == null) {
         localStorage.setItem("initialMode", initialMode);
