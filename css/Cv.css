@@ -147,12 +147,11 @@
                             position: relative;
                         }
                         /* Skill bar css section */
-                        
-                        .container {
+                        /*.container {
                             width: 100%;
                             border-radius: 15px;
                             background-color: #ddd;
-                        }
+                        }*/
                         
                         .skills {
                             text-align: center;
