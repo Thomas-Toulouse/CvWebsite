@@ -1,7 +1,8 @@
 header {
     margin: 0;
     padding: 0;
-    opacity: 1
+    opacity: 1;
+    width : 100%;
 }
 
 .material-symbols-outlined {
@@ -9,8 +10,9 @@ header {
 }
 
 body {
-    font-size: 16px;
     margin: 0px;
+    width: max-content;
+    height: max-content;
     padding: 0px;
     background: #e7e7e7;
     font-family: 'Lato', sans-serif;
@@ -44,32 +46,44 @@ body {
     box-shadow: 0px 4px 8px #e7e7e7a5;
 }
 
+.grid-layout-one {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: start;
+}
+
 
 /* use the variables */
 
-.container-about {
+.grid-one {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#AboutMe {
     /* padding: 40px;
     margin-top: 10rem;
     margin-left: 4rem;*/
-    display: flex;
-    align-items: flex-start;
-    width: 85%;
+    display: grid;
+    flex-direction: row;
+    grid-row: auto;
+    margin-top: 2fr;
+    margin-left: 2fr;
+    margin-right: 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4 fr 0.4fr;
     flex-direction: column;
+    align-content: center;
     flex-wrap: wrap;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 5%;
-    padding: auto;
-    justify-content: space-between;
-    align-self: center;
-    box-sizing: content-box;
-    /* padding-left: 2rem;*/
+    padding-left: 2rem;
     /*row-gap: 25px;*/
+    gap: 10px;
     /*grid-template-columns: 2fr;*/
 }
 
 #hboxMenu {
-    justify-content: space-around;
     display: flex;
     justify-items: flex-end;
     /*opacity: 1;*/
@@ -79,9 +93,9 @@ body {
     top: 0;
     width: 100%;
     list-style-type: none;
-    margin-bottom: 30%;
+    margin: 0;
     padding: 0;
-    background-color: #333333;
+    background-color: #333333fa;
     /*backdrop-filter: blur(12px);*/
 }
 
@@ -117,27 +131,26 @@ body {
 }
 
 #nom {
-    font-size: 1.5rem;
-    margin-left: 2%;
-    margin-right: 2%;
-    color: #a4d8fc;
+    width: 12.4em;
+    height: 1em;
+    margin-left: -9px;
+    margin-top: 18px;
+    align-content: center;
 }
 
-.container-about #title {
-    font-size: 2rem;
-    margin-left: 2%;
-    margin-right: 2%;
+#title {
+    width: 14em;
+    height: 2em;
+    /*background-color: #2b2d42;*/
+    margin-left: -10px;
+    align-content: center;
 }
 
-.container-about #AboutmeText {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 1rem;
+#AboutmeText {
+    width: 26em;
+    height: 12em;
+    margin: 0;
     text-align: justify;
-    width: fit-content;
-    text-overflow: clip;
 }
 
 
@@ -168,7 +181,8 @@ body {
 
 /* sepcific css for skill */
 
-.html {
+
+/*.html {
     width: 90%;
     background-color: #04AA6D;
     border-radius: 15px;
@@ -190,7 +204,7 @@ body {
     width: 90%;
     background-color: #04AA6D;
     border-radius: 15px;
-}
+} */
 
 
 /* Dark mode */
@@ -202,18 +216,15 @@ body {
         color: #EAEAEA;
     }
     .dark-mode {
-        color-scheme: dark;
         background-color: #121212;
         color: #EAEAEA;
         /*box-shadow: 0px 4px 8px #e7e7e7ad*/
         ;
     }
     .dark-mode-box {
-        color-scheme: dark;
         background-color: #e7e7e705;
         color: #EAEAEA;
         box-shadow: 0px 4px 8px #e7e7e7a5;
-        border-spacing: 50%;
     }
 }
 
@@ -227,12 +238,10 @@ body {
         color: black;
     }
     .light-mode {
-        color-scheme: light;
         background-color: #e7e7e7;
         color: #000;
     }
     .lightTheme-box {
-        color-scheme: light;
         background-color: #EAEAEA;
         color: #000000;
         box-shadow: 0px 4px 8px #000;
@@ -244,13 +253,27 @@ body {
         box-sizing: border-box;
     }
     #AboutMe {
-        display: flex;
-        width: 96%;
+        margin-top: 10fr;
+        display: grid;
+        grid-row: auto;
+        margin-left: 0.2fr;
+        margin-right: 0.2fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4 fr 0.4fr;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-top: 2%;
+        padding-left: 2rem;
+        grid-template-areas: "title" "nom" "AboutmeText";
+    }
+    .grid-layout-one {
+        align-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20 rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: start;
     }
 }
