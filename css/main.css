@@ -9,6 +9,7 @@ header {
 }
 
 body {
+    margin: 0%;
     font-size: 16px;
     background: #e7e7e7;
     font-family: 'Lato', sans-serif;
@@ -67,9 +68,7 @@ body {
 }
 
 #hboxMenu {
-    justify-content: space-around;
     display: flex;
-    justify-items: flex-end;
     /*opacity: 1;*/
     z-index: 2;
     position: fixed;
@@ -89,7 +88,8 @@ body {
 
 #hboxMenu li {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-content: center;
 }
 
 #hboxMenu li p {
@@ -105,9 +105,8 @@ body {
 
 #hboxMenu li #themeIcon {
     z-index: 2;
-    align-tracks: flex-end;
     display: flex;
-    align-items: flex-end;
+    align-self: center;
     padding: 20px;
     color: #e7e7e7;
     background-color: transparent;
@@ -139,7 +138,7 @@ body {
 }
 
 
-/* #skillSection {
+/*#skillSection {
     display: block;
     top: 400px;
     left: 130px;
@@ -149,8 +148,7 @@ body {
 
 /* Skill bar css section */
 
-
-/*.container {
+.container {
     width: 100%;
     border-radius: 15px;
     background-color: #ddd;
